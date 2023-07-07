@@ -1,0 +1,104 @@
+.header {
+  background: $bg;
+  padding-top: 18px;
+  padding-bottom: 22px;
+  font-weight: 600;
+
+  &__logo {
+    transition: $cubic-bezier 300ms;
+
+    &:hover,
+    &:focus {
+      opacity: 0.7;
+    }
+  }
+
+  &__top-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    margin-bottom: 7px;
+  }
+
+  &__phone {
+    display: flex;
+    align-content: center;
+    gap: 6px;
+
+    & > span {
+      margin: auto 0;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 800;
+      line-height: calc(24 / 18);
+    }
+
+    transition: $cubic-bezier 300ms;
+
+    &:hover,
+    &:focus {
+      opacity: 0.7;
+    }
+  }
+
+  &__city-search {
+    width: 282px;
+    margin: 0;
+    padding: 10px 12px;
+    font-size: 14px;
+    color: $bg;
+    border: 1px solid transparent;
+    border-radius: 10px;
+
+    background: $primary url('../images/Search.png') no-repeat right 12px bottom
+      50%;
+
+    &::placeholder {
+      color: $bg;
+    }
+  }
+
+  &__nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+  }
+
+  &__links {
+    display: flex;
+    font-size: 16px;
+    line-height: calc(21 / 16);
+    gap: 30px;
+
+    & > li > a {
+      transition: $cubic-bezier 300ms;
+      &:hover,
+      &:focus {
+        opacity: 0.7;
+      }
+    }
+  }
+
+  &__action {
+    background: $secondary;
+    color: $bg;
+    gap: 9px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 26px;
+    letter-spacing: -0.5px;
+    padding: 9px 22px;
+    border-radius: 12px;
+
+    transition: $cubic-bezier 300ms;
+
+    &:hover,
+    &:focus {
+      opacity: 0.7;
+    }
+  }
+}
